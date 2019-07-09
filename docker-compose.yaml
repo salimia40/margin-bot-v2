@@ -1,0 +1,15 @@
+version: '3'
+services:
+  bot:
+    container_name: margin-bot
+    restart: always
+    env_file:
+      - base.env
+    build: .
+    links:
+      - mongodbm
+  mongodbm:
+    container_name: mongodbm
+    image: mongo
+    ports:
+      - '27017:27017'
