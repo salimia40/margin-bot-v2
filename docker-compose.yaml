@@ -1,7 +1,7 @@
 version: '3'
 services:
-  bot:
-    container_name: margin-bot
+  margin:
+    container_name: margin-bot-2
     restart: always
     env_file:
       - base.env
