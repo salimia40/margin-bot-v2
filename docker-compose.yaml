@@ -8,8 +8,8 @@ services:
     build: .
     links:
       - mongodb
-  mongodb:
-    container_name: mongodb
-    image: mongo
-    ports:
-      - '27017:27017'
+  # mongodb:
+  #   container_name: mongodb
+  #   image: mongo
+  #   ports:
+  #     - '27017:27017'
