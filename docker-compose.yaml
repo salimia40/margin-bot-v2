@@ -7,9 +7,9 @@ services:
       - base.env
     build: .
     links:
-      - mongodb
-  # mongodb:
-  #   container_name: mongodb
-  #   image: mongo
-  #   ports:
-  #     - '27017:27017'
+      - mongodbm
+  mongodbm:
+    container_name: mongodbm
+    image: mongo
+    ports:
+      - '27017:27028'
